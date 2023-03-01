@@ -1,0 +1,58 @@
+package Array_Learning;
+import java.util.Scanner;
+public class matrixadd {
+	public static void main(String args[]) {
+		System.out.println("Enter the no of rows");
+		Scanner scanner=new Scanner(System.in);
+		int no_of_rows=scanner.nextInt();
+		System.out.println("Enter no of columns");
+		int no_of_columns=scanner.nextInt();
+		int matrix1[][]=new int[no_of_rows][no_of_columns];
+		int matrix2[][]=new int[no_of_rows][no_of_columns];
+		int resultantmat[][]=new int[no_of_rows][no_of_columns];
+		System.out.println("Enter the elements of the matrix1");
+		for(int i=0;i<no_of_rows;i++)
+		{
+			for(int j=0;j<no_of_columns;j++)
+			{
+				matrix1[i][j]=scanner.nextInt();
+			}
+		}
+	/*	System.out.println("THE ELEMENTS OF THE MATRIX 1 ARE:");
+		for(int i=0;i<no_of_rows;i++)
+		{
+			for(int j=0;j<no_of_columns;j++)
+			{
+				matrix1[i][j]= matrix1[i][j]  ;
+			}
+		}*/
+		System.out.println("ENTER THE ELEMENTS OF THE SECOND MATRIX");
+		for(int i=0;i<no_of_rows;i++) {
+			for(int j=0;j<no_of_columns;j++) {
+				matrix2[i][j]=scanner.nextInt();		
+				}
+		}
+		System.out.println("the elements of the second matrix are");
+		for(int i=0;i<no_of_rows;i++)
+		{
+			for(int j=0;j<no_of_columns;j++)
+			{
+				matrix2[i][j]=matrix2[i][j] ;
+			}
+		}
+		System.out.println("the added resultant matrix is");
+		for(int i=0;i<no_of_rows;i++) {
+			for(int j=0;j<no_of_columns;j++) {
+				resultantmat[i][j]=matrix1[i][j]*matrix2[i][j];
+			}
+		}
+		System.out.println("THE RESULTANT MATRIX IS");
+		for(int i=0;i<no_of_rows;i++) {
+			for(int j=0;j<no_of_columns;j++) {
+				System.out.println(resultantmat[i][j]);
+			}
+		}
+	}
+			}
+
+			
